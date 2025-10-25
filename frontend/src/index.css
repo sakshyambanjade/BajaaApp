@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00D2BE 0%, #00A88F 100%);
+  border-radius: 10px;
+  border: 2px solid #0A0A0F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00BFA9 0%, #008F7A 100%);
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(135deg, #0A0A0F 0%, #15151E 100%);
+  color: #F5F5F5;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(26, 26, 36, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #00D2BE 0%, #00BFA9 50%, #00A88F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Racing stripe animation */
+@keyframes raceStripe {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 0; }
+}
+
+.racing-stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 210, 190, 0.1) 10px,
+    rgba(0, 210, 190, 0.1) 20px
+  );
+  background-size: 100px 100px;
+  animation: raceStripe 2s linear infinite;
+}
+
+/* Neon glow effect */
+.neon-text {
+  text-shadow: 
+    0 0 7px rgba(0, 210, 190, 0.8),
+    0 0 10px rgba(0, 210, 190, 0.6),
+    0 0 21px rgba(0, 210, 190, 0.4),
+    0 0 42px rgba(0, 210, 190, 0.2);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 210, 190, 0.2);
+}
