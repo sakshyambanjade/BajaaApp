@@ -1,0 +1,201 @@
+season,round,race_name,circuit,driver,driver_id,team,team_id,grid_position,qualifying_time,final_position,points,dnf,recent_avg_position,avg_track_position,team_season_points,driver_dnf_rate,home_advantage,tire_strategy_score
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Albon,albon,Williams,williams,14,21.0,13,0.0,0,10.0,10.0,0.0,0.0,0,0.3
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Albon,albon,Williams,williams,16,24.0,14,0.0,0,13.0,10.0,0.0,0.0,0,0.2
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Albon,albon,Williams,williams,20,30.0,10,1.0,0,13.5,10.0,0.0,0.0,0,0.0
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Albon,albon,Williams,williams,18,27.0,11,0.0,0,12.333333333333334,10.0,1.0,0.0,0,0.1
+2022,5,Miami Grand Prix,Miami International Autodrome,Albon,albon,Williams,williams,18,27.0,9,2.0,0,11.666666666666666,10.0,1.0,0.0,0,0.1
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Albon,albon,Williams,williams,15,22.5,10,1.0,0,10.0,13.0,0.0,0.0,0,0.25
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Albon,albon,Williams,williams,17,25.5,19,0.0,0,10.0,14.0,1.0,0.0,0,0.15
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Albon,albon,Williams,williams,8,12.0,19,0.0,0,12.666666666666666,10.0,1.0,0.0,0,0.6
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Albon,albon,Williams,williams,12,18.0,12,0.0,0,16.0,10.0,1.0,0.0,0,0.4
+2023,5,Miami Grand Prix,Miami International Autodrome,Albon,albon,Williams,williams,11,16.5,14,0.0,0,16.666666666666668,9.0,1.0,0.0,0,0.45
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Alonso,alonso,Alpine F1 Team,alpine,8,12.0,9,2.0,0,10.0,10.0,0.0,0.0,0,0.6
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Alonso,alonso,Alpine F1 Team,alpine,7,10.5,16,0.0,0,9.0,10.0,2.0,0.0,0,0.65
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Alonso,alonso,Alpine F1 Team,alpine,10,15.0,17,0.0,0,12.5,10.0,2.0,0.0,0,0.5
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Alonso,alonso,Alpine F1 Team,alpine,9,13.5,19,0.0,0,14.0,10.0,2.0,0.0,0,0.55
+2022,5,Miami Grand Prix,Miami International Autodrome,Alonso,alonso,Alpine F1 Team,alpine,11,16.5,11,0.0,0,17.333333333333332,10.0,2.0,0.0,0,0.45
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Alonso,alonso,Aston Martin,aston_martin,5,7.5,3,15.0,0,15.666666666666666,9.0,0.0,0.0,0,0.75
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Alonso,alonso,Aston Martin,aston_martin,2,3.0,3,15.0,0,11.0,16.0,15.0,0.0,0,0.9
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Alonso,alonso,Aston Martin,aston_martin,4,6.0,3,15.0,0,5.666666666666667,17.0,30.0,0.0,0,0.8
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Alonso,alonso,Aston Martin,aston_martin,6,9.0,4,12.0,0,3.0,10.0,45.0,0.0,0,0.7
+2023,5,Miami Grand Prix,Miami International Autodrome,Alonso,alonso,Aston Martin,aston_martin,2,3.0,3,15.0,0,3.3333333333333335,11.0,57.0,0.0,0,0.9
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Bottas,bottas,Alfa Romeo,alfa,6,9.0,6,8.0,0,10.0,10.0,0.0,0.0,0,0.7
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Bottas,bottas,Alfa Romeo,alfa,8,12.0,15,0.0,0,6.0,10.0,8.0,0.0,0,0.6
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Bottas,bottas,Alfa Romeo,alfa,12,18.0,8,4.0,0,10.5,10.0,8.0,0.0,0,0.4
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Bottas,bottas,Alfa Romeo,alfa,7,10.5,5,10.0,0,9.666666666666666,10.0,12.0,0.0,0,0.65
+2022,5,Miami Grand Prix,Miami International Autodrome,Bottas,bottas,Alfa Romeo,alfa,5,7.5,7,6.0,0,9.333333333333334,10.0,22.0,0.0,0,0.75
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Bottas,bottas,Alfa Romeo,alfa,12,18.0,8,4.0,0,6.666666666666667,6.0,0.0,0.0,0,0.4
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Bottas,bottas,Alfa Romeo,alfa,14,21.0,18,0.0,0,6.666666666666667,15.0,4.0,0.0,0,0.3
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Bottas,bottas,Alfa Romeo,alfa,19,28.5,11,0.0,0,11.0,8.0,4.0,0.0,0,0.05
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Bottas,bottas,Alfa Romeo,alfa,13,19.5,18,0.0,0,12.333333333333334,10.0,4.0,0.0,0,0.35
+2023,5,Miami Grand Prix,Miami International Autodrome,Bottas,bottas,Alfa Romeo,alfa,10,15.0,13,0.0,0,15.666666666666666,7.0,4.0,0.0,0,0.5
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,de Vries,de_vries,AlphaTauri,alphatauri,19,28.5,14,0.0,0,10.0,10.0,0.0,0.0,0,0.05
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,de Vries,de_vries,AlphaTauri,alphatauri,18,27.0,14,0.0,0,14.0,10.0,0.0,0.0,0,0.1
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,de Vries,de_vries,AlphaTauri,alphatauri,15,22.5,15,0.0,0,14.0,10.0,0.0,0.0,0,0.25
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,de Vries,de_vries,AlphaTauri,alphatauri,18,27.0,20,0.0,0,14.333333333333334,10.0,0.0,0.0,0,0.1
+2023,5,Miami Grand Prix,Miami International Autodrome,de Vries,de_vries,AlphaTauri,alphatauri,15,22.5,18,0.0,0,16.333333333333332,10.0,0.0,0.0,0,0.25
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Gasly,gasly,AlphaTauri,alphatauri,10,15.0,20,0.0,0,10.0,10.0,0.0,0.0,0,0.5
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Gasly,gasly,AlphaTauri,alphatauri,9,13.5,8,4.0,0,20.0,10.0,0.0,0.0,0,0.55
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Gasly,gasly,AlphaTauri,alphatauri,11,16.5,9,2.0,0,14.0,10.0,4.0,0.0,0,0.45
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Gasly,gasly,AlphaTauri,alphatauri,17,25.5,12,0.0,0,12.333333333333334,10.0,6.0,0.0,0,0.15
+2022,5,Miami Grand Prix,Miami International Autodrome,Gasly,gasly,AlphaTauri,alphatauri,7,10.5,18,0.0,0,9.666666666666666,10.0,6.0,0.0,0,0.65
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Gasly,gasly,Alpine F1 Team,alpine,20,30.0,9,2.0,0,13.0,20.0,0.0,0.0,0,0.0
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Gasly,gasly,Alpine F1 Team,alpine,9,13.5,9,2.0,0,13.0,8.0,2.0,0.0,0,0.55
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Gasly,gasly,Alpine F1 Team,alpine,9,13.5,13,0.0,0,12.0,9.0,4.0,0.0,0,0.55
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Gasly,gasly,Alpine F1 Team,alpine,17,25.5,14,0.0,0,10.333333333333334,10.0,4.0,0.0,0,0.15
+2023,5,Miami Grand Prix,Miami International Autodrome,Gasly,gasly,Alpine F1 Team,alpine,5,7.5,8,4.0,0,12.0,18.0,4.0,0.0,0,0.75
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Hamilton,hamilton,Mercedes,mercedes,5,7.5,3,15.0,0,10.0,10.0,0.0,0.0,0,0.75
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Hamilton,hamilton,Mercedes,mercedes,15,22.5,10,1.0,0,3.0,10.0,15.0,0.0,0,0.25
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Hamilton,hamilton,Mercedes,mercedes,5,7.5,4,12.0,0,6.5,10.0,16.0,0.0,0,0.75
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Hamilton,hamilton,Mercedes,mercedes,14,21.0,13,0.0,0,5.666666666666667,10.0,28.0,0.0,0,0.3
+2022,5,Miami Grand Prix,Miami International Autodrome,Hamilton,hamilton,Mercedes,mercedes,6,9.0,6,8.0,0,9.0,10.0,28.0,0.0,0,0.7
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Hamilton,hamilton,Mercedes,mercedes,7,10.5,5,10.0,0,7.666666666666667,3.0,0.0,0.0,0,0.65
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Hamilton,hamilton,Mercedes,mercedes,7,10.5,5,10.0,0,8.0,10.0,10.0,0.0,0,0.65
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Hamilton,hamilton,Mercedes,mercedes,3,4.5,2,18.0,0,5.333333333333333,4.0,20.0,0.0,0,0.85
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Hamilton,hamilton,Mercedes,mercedes,5,7.5,6,8.0,0,4.0,10.0,38.0,0.0,0,0.75
+2023,5,Miami Grand Prix,Miami International Autodrome,Hamilton,hamilton,Mercedes,mercedes,13,19.5,6,8.0,0,4.333333333333333,6.0,46.0,0.0,0,0.35
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Hülkenberg,hulkenberg,Aston Martin,aston_martin,17,25.5,17,0.0,0,10.0,10.0,0.0,0.0,0,0.15
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Hülkenberg,hulkenberg,Aston Martin,aston_martin,17,25.5,12,0.0,0,17.0,10.0,0.0,0.0,0,0.15
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Hülkenberg,hulkenberg,Haas F1 Team,haas,10,15.0,15,0.0,0,14.5,17.0,0.0,0.0,0,0.5
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Hülkenberg,hulkenberg,Haas F1 Team,haas,10,15.0,12,0.0,0,14.666666666666666,12.0,0.0,0.0,0,0.5
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Hülkenberg,hulkenberg,Haas F1 Team,haas,10,15.0,7,6.0,0,13.0,10.0,0.0,0.0,0,0.5
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Hülkenberg,hulkenberg,Haas F1 Team,haas,20,30.0,17,0.0,0,11.333333333333334,10.0,6.0,0.0,0,0.0
+2023,5,Miami Grand Prix,Miami International Autodrome,Hülkenberg,hulkenberg,Haas F1 Team,haas,12,18.0,15,0.0,0,12.0,10.0,6.0,0.0,0,0.4
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,7,10.5,5,10.0,0,10.0,10.0,0.0,0.0,0,0.65
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,10,15.0,9,2.0,0,5.0,10.0,10.0,0.0,0,0.5
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,16,24.0,14,0.0,0,7.0,10.0,12.0,0.0,0,0.2
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Magnussen,kevin_magnussen,Haas F1 Team,haas,8,12.0,9,2.0,0,9.333333333333334,10.0,12.0,0.0,0,0.6
+2022,5,Miami Grand Prix,Miami International Autodrome,Magnussen,kevin_magnussen,Haas F1 Team,haas,16,24.0,16,0.0,0,10.666666666666666,10.0,14.0,0.0,0,0.2
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,17,25.5,13,0.0,0,13.0,5.0,6.0,0.0,0,0.15
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,13,19.5,10,1.0,0,12.666666666666666,9.0,6.0,0.0,0,0.35
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,14,21.0,17,0.0,0,13.0,14.0,7.0,0.0,0,0.3
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Magnussen,kevin_magnussen,Haas F1 Team,haas,16,24.0,13,0.0,0,13.333333333333334,10.0,7.0,0.0,0,0.2
+2023,5,Miami Grand Prix,Miami International Autodrome,Magnussen,kevin_magnussen,Haas F1 Team,haas,4,6.0,10,1.0,0,13.333333333333334,16.0,7.0,0.0,0,0.8
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Latifi,latifi,Williams,williams,20,30.0,16,0.0,0,10.0,10.0,3.0,0.0,0,0.0
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Latifi,latifi,Williams,williams,18,27.0,18,0.0,0,16.0,10.0,3.0,0.0,0,0.1
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Latifi,latifi,Williams,williams,18,27.0,16,0.0,0,17.0,10.0,3.0,0.0,0,0.1
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Latifi,latifi,Williams,williams,19,28.5,16,0.0,0,16.666666666666668,10.0,3.0,0.0,0,0.05
+2022,5,Miami Grand Prix,Miami International Autodrome,Latifi,latifi,Williams,williams,19,28.5,14,0.0,0,16.666666666666668,10.0,3.0,0.0,0,0.05
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Leclerc,leclerc,Ferrari,ferrari,1,1.5,1,26.0,0,10.0,10.0,0.0,0.0,0,0.95
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Leclerc,leclerc,Ferrari,ferrari,2,3.0,2,19.0,0,1.0,10.0,26.0,0.0,0,0.9
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Leclerc,leclerc,Ferrari,ferrari,1,1.5,1,26.0,0,1.5,10.0,45.0,0.0,0,0.95
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Leclerc,leclerc,Ferrari,ferrari,2,3.0,6,8.0,0,1.3333333333333333,10.0,71.0,0.0,0,0.9
+2022,5,Miami Grand Prix,Miami International Autodrome,Leclerc,leclerc,Ferrari,ferrari,1,1.5,2,18.0,0,3.0,10.0,79.0,0.0,0,0.95
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Leclerc,leclerc,Ferrari,ferrari,3,4.5,19,0.0,0,3.0,1.0,0.0,0.0,0,0.85
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Leclerc,leclerc,Ferrari,ferrari,12,18.0,7,6.0,0,9.0,2.0,0.0,0.0,0,0.4
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Leclerc,leclerc,Ferrari,ferrari,7,10.5,20,0.0,0,9.333333333333334,1.0,6.0,0.0,0,0.65
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Leclerc,leclerc,Ferrari,ferrari,1,1.5,3,15.0,0,15.333333333333334,10.0,6.0,0.0,0,0.95
+2023,5,Miami Grand Prix,Miami International Autodrome,Leclerc,leclerc,Ferrari,ferrari,7,10.5,7,6.0,0,10.0,2.0,21.0,0.0,0,0.65
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Verstappen,max_verstappen,Red Bull,red_bull,2,3.0,19,0.0,0,10.0,10.0,0.0,0.0,0,0.9
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Verstappen,max_verstappen,Red Bull,red_bull,4,6.0,1,25.0,0,19.0,10.0,0.0,0.0,0,0.8
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Verstappen,max_verstappen,Red Bull,red_bull,2,3.0,18,0.0,0,10.0,10.0,25.0,0.0,0,0.9
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Verstappen,max_verstappen,Red Bull,red_bull,1,1.5,1,26.0,0,12.666666666666666,10.0,25.0,0.0,0,0.95
+2022,5,Miami Grand Prix,Miami International Autodrome,Verstappen,max_verstappen,Red Bull,red_bull,3,4.5,1,26.0,0,6.666666666666667,10.0,51.0,0.0,0,0.85
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Verstappen,max_verstappen,Red Bull,red_bull,1,1.5,1,25.0,0,6.666666666666667,19.0,0.0,0.0,0,0.95
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Verstappen,max_verstappen,Red Bull,red_bull,15,22.5,2,19.0,0,1.0,1.0,25.0,0.0,0,0.25
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Verstappen,max_verstappen,Red Bull,red_bull,1,1.5,1,25.0,0,1.3333333333333333,18.0,44.0,0.0,0,0.95
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Verstappen,max_verstappen,Red Bull,red_bull,2,3.0,2,18.0,0,1.3333333333333333,10.0,69.0,0.0,0,0.9
+2023,5,Miami Grand Prix,Miami International Autodrome,Verstappen,max_verstappen,Red Bull,red_bull,9,13.5,1,26.0,0,1.6666666666666667,1.0,87.0,0.0,0,0.55
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Schumacher,mick_schumacher,Haas F1 Team,haas,12,18.0,11,0.0,0,10.0,10.0,14.0,0.0,0,0.4
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Schumacher,mick_schumacher,Haas F1 Team,haas,20,30.0,20,0.0,0,11.0,10.0,14.0,0.0,0,0.0
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Schumacher,mick_schumacher,Haas F1 Team,haas,15,22.5,13,0.0,0,15.5,10.0,14.0,0.0,0,0.25
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Schumacher,mick_schumacher,Haas F1 Team,haas,10,15.0,17,0.0,0,14.666666666666666,10.0,14.0,0.0,0,0.5
+2022,5,Miami Grand Prix,Miami International Autodrome,Schumacher,mick_schumacher,Haas F1 Team,haas,15,22.5,15,0.0,0,16.666666666666668,10.0,14.0,0.0,0,0.25
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Norris,norris,McLaren,mclaren,13,19.5,15,0.0,0,10.0,10.0,0.0,0.0,0,0.35
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Norris,norris,McLaren,mclaren,11,16.5,7,6.0,0,15.0,10.0,0.0,0.0,0,0.45
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Norris,norris,McLaren,mclaren,4,6.0,5,10.0,0,11.0,10.0,6.0,0.0,0,0.8
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Norris,norris,McLaren,mclaren,5,7.5,3,15.0,0,9.0,10.0,16.0,0.0,0,0.75
+2022,5,Miami Grand Prix,Miami International Autodrome,Norris,norris,McLaren,mclaren,8,12.0,19,0.0,0,5.0,10.0,31.0,0.0,0,0.6
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Norris,norris,McLaren,mclaren,11,16.5,17,0.0,0,9.0,15.0,0.0,0.0,0,0.45
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Norris,norris,McLaren,mclaren,19,28.5,17,0.0,0,13.0,7.0,0.0,0.0,0,0.05
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Norris,norris,McLaren,mclaren,13,19.5,6,8.0,0,17.666666666666668,5.0,0.0,0.0,0,0.35
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Norris,norris,McLaren,mclaren,7,10.5,9,2.0,0,13.333333333333334,10.0,8.0,0.0,0,0.65
+2023,5,Miami Grand Prix,Miami International Autodrome,Norris,norris,McLaren,mclaren,16,24.0,17,0.0,0,10.666666666666666,19.0,10.0,0.0,0,0.2
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Ocon,ocon,Alpine F1 Team,alpine,11,16.5,7,6.0,0,10.0,10.0,2.0,0.0,0,0.45
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Ocon,ocon,Alpine F1 Team,alpine,5,7.5,6,8.0,0,7.0,10.0,8.0,0.0,0,0.75
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Ocon,ocon,Alpine F1 Team,alpine,8,12.0,7,6.0,0,6.5,10.0,16.0,0.0,0,0.6
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Ocon,ocon,Alpine F1 Team,alpine,16,24.0,14,0.0,0,6.666666666666667,10.0,22.0,0.0,0,0.2
+2022,5,Miami Grand Prix,Miami International Autodrome,Ocon,ocon,Alpine F1 Team,alpine,20,30.0,8,4.0,0,9.0,10.0,22.0,0.0,0,0.0
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Ocon,ocon,Alpine F1 Team,alpine,9,13.5,18,0.0,0,9.666666666666666,7.0,8.0,0.0,0,0.55
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Ocon,ocon,Alpine F1 Team,alpine,6,9.0,8,4.0,0,13.333333333333334,6.0,8.0,0.0,0,0.7
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Ocon,ocon,Alpine F1 Team,alpine,11,16.5,14,0.0,0,11.333333333333334,7.0,12.0,0.0,0,0.45
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Ocon,ocon,Alpine F1 Team,alpine,19,28.5,15,0.0,0,13.333333333333334,10.0,12.0,0.0,0,0.05
+2023,5,Miami Grand Prix,Miami International Autodrome,Ocon,ocon,Alpine F1 Team,alpine,8,12.0,9,2.0,0,12.333333333333334,8.0,12.0,0.0,0,0.6
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Pérez,perez,Red Bull,red_bull,4,6.0,18,0.0,0,10.0,10.0,77.0,0.0,0,0.8
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Pérez,perez,Red Bull,red_bull,1,1.5,4,12.0,0,18.0,10.0,77.0,0.0,0,0.95
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Pérez,perez,Red Bull,red_bull,3,4.5,2,18.0,0,11.0,10.0,89.0,0.0,0,0.85
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Pérez,perez,Red Bull,red_bull,3,4.5,2,18.0,0,8.0,10.0,107.0,0.0,0,0.85
+2022,5,Miami Grand Prix,Miami International Autodrome,Pérez,perez,Red Bull,red_bull,4,6.0,4,12.0,0,2.6666666666666665,10.0,125.0,0.0,0,0.8
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Pérez,perez,Red Bull,red_bull,2,3.0,2,18.0,0,2.6666666666666665,18.0,113.0,0.0,0,0.9
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Pérez,perez,Red Bull,red_bull,1,1.5,1,25.0,0,2.6666666666666665,4.0,131.0,0.0,0,0.95
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Pérez,perez,Red Bull,red_bull,20,30.0,5,11.0,0,2.3333333333333335,2.0,156.0,0.0,0,0.0
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Pérez,perez,Red Bull,red_bull,3,4.5,1,25.0,0,2.6666666666666665,10.0,167.0,0.0,0,0.85
+2023,5,Miami Grand Prix,Miami International Autodrome,Pérez,perez,Red Bull,red_bull,1,1.5,2,18.0,0,2.3333333333333335,4.0,192.0,0.0,0,0.95
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Piastri,piastri,McLaren,mclaren,18,27.0,20,0.0,0,10.0,10.0,10.0,0.0,0,0.1
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Piastri,piastri,McLaren,mclaren,8,12.0,15,0.0,0,20.0,10.0,10.0,0.0,0,0.6
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Piastri,piastri,McLaren,mclaren,16,24.0,8,4.0,0,17.5,10.0,10.0,0.0,0,0.2
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Piastri,piastri,McLaren,mclaren,10,15.0,11,0.0,0,14.333333333333334,10.0,14.0,0.0,0,0.5
+2023,5,Miami Grand Prix,Miami International Autodrome,Piastri,piastri,McLaren,mclaren,19,28.5,19,0.0,0,11.333333333333334,10.0,14.0,0.0,0,0.05
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Ricciardo,ricciardo,McLaren,mclaren,18,27.0,14,0.0,0,10.0,10.0,31.0,0.0,0,0.1
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Ricciardo,ricciardo,McLaren,mclaren,14,21.0,17,0.0,0,14.0,10.0,31.0,0.0,0,0.3
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Ricciardo,ricciardo,McLaren,mclaren,7,10.5,6,8.0,0,15.5,10.0,31.0,0.0,0,0.65
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Ricciardo,ricciardo,McLaren,mclaren,6,9.0,18,0.0,0,12.333333333333334,10.0,39.0,0.0,0,0.7
+2022,5,Miami Grand Prix,Miami International Autodrome,Ricciardo,ricciardo,McLaren,mclaren,14,21.0,13,0.0,0,13.666666666666666,10.0,39.0,0.0,0,0.3
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Russell,russell,Mercedes,mercedes,9,13.5,4,12.0,0,10.0,10.0,36.0,0.0,0,0.55
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Russell,russell,Mercedes,mercedes,6,9.0,5,10.0,0,4.0,10.0,48.0,0.0,0,0.7
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Russell,russell,Mercedes,mercedes,6,9.0,3,15.0,0,4.5,10.0,58.0,0.0,0,0.7
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Russell,russell,Mercedes,mercedes,11,16.5,4,12.0,0,4.0,10.0,73.0,0.0,0,0.45
+2022,5,Miami Grand Prix,Miami International Autodrome,Russell,russell,Mercedes,mercedes,12,18.0,5,10.0,0,4.0,10.0,85.0,0.0,0,0.4
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Russell,russell,Mercedes,mercedes,6,9.0,7,6.0,0,4.0,4.0,54.0,0.0,0,0.7
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Russell,russell,Mercedes,mercedes,3,4.5,4,12.0,0,5.333333333333333,5.0,60.0,0.0,0,0.85
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Russell,russell,Mercedes,mercedes,2,3.0,18,0.0,0,5.333333333333333,3.0,72.0,0.0,0,0.9
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Russell,russell,Mercedes,mercedes,11,16.5,8,5.0,0,9.666666666666666,10.0,72.0,0.0,0,0.45
+2023,5,Miami Grand Prix,Miami International Autodrome,Russell,russell,Mercedes,mercedes,6,9.0,4,12.0,0,10.0,5.0,77.0,0.0,0,0.7
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Sainz,sainz,Ferrari,ferrari,3,4.5,2,18.0,0,10.0,10.0,97.0,0.0,0,0.85
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Sainz,sainz,Ferrari,ferrari,3,4.5,3,15.0,0,2.0,10.0,115.0,0.0,0,0.85
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Sainz,sainz,Ferrari,ferrari,9,13.5,20,0.0,0,2.5,10.0,130.0,0.0,0,0.55
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Sainz,sainz,Ferrari,ferrari,4,6.0,20,0.0,0,8.333333333333334,10.0,130.0,0.0,0,0.8
+2022,5,Miami Grand Prix,Miami International Autodrome,Sainz,sainz,Ferrari,ferrari,2,3.0,3,15.0,0,14.333333333333334,10.0,130.0,0.0,0,0.9
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Sainz,sainz,Ferrari,ferrari,4,6.0,4,12.0,0,14.333333333333334,2.0,27.0,0.0,0,0.8
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Sainz,sainz,Ferrari,ferrari,4,6.0,6,8.0,0,9.0,3.0,39.0,0.0,0,0.8
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Sainz,sainz,Ferrari,ferrari,5,7.5,12,0.0,0,4.333333333333333,20.0,47.0,0.0,0,0.75
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Sainz,sainz,Ferrari,ferrari,4,6.0,5,10.0,0,7.333333333333333,10.0,47.0,0.0,0,0.8
+2023,5,Miami Grand Prix,Miami International Autodrome,Sainz,sainz,Ferrari,ferrari,3,4.5,5,10.0,0,7.666666666666667,3.0,57.0,0.0,0,0.85
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Sargeant,sargeant,Williams,williams,16,24.0,12,0.0,0,10.0,10.0,1.0,0.0,0,0.2
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Sargeant,sargeant,Williams,williams,20,30.0,16,0.0,0,12.0,10.0,1.0,0.0,0,0.0
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Sargeant,sargeant,Williams,williams,18,27.0,16,0.0,0,14.0,10.0,1.0,0.0,0,0.1
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Sargeant,sargeant,Williams,williams,14,21.0,16,0.0,0,14.666666666666666,10.0,1.0,0.0,0,0.3
+2023,5,Miami Grand Prix,Miami International Autodrome,Sargeant,sargeant,Williams,williams,20,30.0,20,0.0,0,16.0,10.0,1.0,0.0,0,0.0
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Stroll,stroll,Aston Martin,aston_martin,19,28.5,12,0.0,0,10.0,10.0,0.0,0.0,0,0.05
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Stroll,stroll,Aston Martin,aston_martin,13,19.5,13,0.0,0,12.0,10.0,0.0,0.0,0,0.35
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Stroll,stroll,Aston Martin,aston_martin,19,28.5,12,0.0,0,12.5,10.0,0.0,0.0,0,0.05
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Stroll,stroll,Aston Martin,aston_martin,15,22.5,10,1.0,0,12.333333333333334,10.0,0.0,0.0,0,0.25
+2022,5,Miami Grand Prix,Miami International Autodrome,Stroll,stroll,Aston Martin,aston_martin,20,30.0,10,1.0,0,11.666666666666666,10.0,1.0,0.0,0,0.0
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Stroll,stroll,Aston Martin,aston_martin,8,12.0,6,8.0,0,10.666666666666666,12.0,72.0,0.0,0,0.6
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Stroll,stroll,Aston Martin,aston_martin,5,7.5,20,0.0,0,8.666666666666666,13.0,80.0,0.0,0,0.75
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Stroll,stroll,Aston Martin,aston_martin,6,9.0,4,12.0,0,12.0,12.0,80.0,0.0,0,0.7
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Stroll,stroll,Aston Martin,aston_martin,9,13.5,7,6.0,0,10.0,10.0,92.0,0.0,0,0.55
+2023,5,Miami Grand Prix,Miami International Autodrome,Stroll,stroll,Aston Martin,aston_martin,18,27.0,12,0.0,0,10.333333333333334,10.0,98.0,0.0,0,0.1
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,16,24.0,8,4.0,0,10.0,10.0,6.0,0.0,0,0.2
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,19,28.5,19,0.0,0,8.0,10.0,10.0,0.0,0,0.05
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,13,19.5,15,0.0,0,13.5,10.0,10.0,0.0,0,0.35
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Tsunoda,tsunoda,AlphaTauri,alphatauri,12,18.0,7,6.0,0,14.0,10.0,10.0,0.0,0,0.4
+2022,5,Miami Grand Prix,Miami International Autodrome,Tsunoda,tsunoda,AlphaTauri,alphatauri,9,13.5,12,0.0,0,13.666666666666666,10.0,16.0,0.0,0,0.55
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,14,21.0,11,0.0,0,11.333333333333334,8.0,0.0,0.0,0,0.3
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,16,24.0,11,0.0,0,10.0,19.0,0.0,0.0,0,0.2
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,12,18.0,10,1.0,0,11.333333333333334,15.0,0.0,0.0,0,0.4
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Tsunoda,tsunoda,AlphaTauri,alphatauri,8,12.0,10,1.0,0,10.666666666666666,10.0,1.0,0.0,0,0.6
+2023,5,Miami Grand Prix,Miami International Autodrome,Tsunoda,tsunoda,AlphaTauri,alphatauri,17,25.5,11,0.0,0,10.333333333333334,12.0,2.0,0.0,0,0.15
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Vettel,vettel,Aston Martin,aston_martin,17,25.5,19,0.0,0,10.0,10.0,2.0,0.0,0,0.15
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Vettel,vettel,Aston Martin,aston_martin,13,19.5,8,4.0,0,19.0,10.0,2.0,0.0,0,0.35
+2022,5,Miami Grand Prix,Miami International Autodrome,Vettel,vettel,Aston Martin,aston_martin,20,30.0,17,0.0,0,13.5,10.0,6.0,0.0,0,0.0
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,Zhou,zhou,Alfa Romeo,alfa,15,22.5,10,1.0,0,10.0,10.0,28.0,0.0,0,0.25
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Zhou,zhou,Alfa Romeo,alfa,12,18.0,11,0.0,0,10.0,10.0,29.0,0.0,0,0.4
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Zhou,zhou,Alfa Romeo,alfa,14,21.0,11,0.0,0,10.5,10.0,29.0,0.0,0,0.3
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Zhou,zhou,Alfa Romeo,alfa,20,30.0,15,0.0,0,10.666666666666666,10.0,29.0,0.0,0,0.0
+2022,5,Miami Grand Prix,Miami International Autodrome,Zhou,zhou,Alfa Romeo,alfa,17,25.5,20,0.0,0,12.333333333333334,10.0,29.0,0.0,0,0.15
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Zhou,zhou,Alfa Romeo,alfa,13,19.5,16,0.0,0,15.333333333333334,10.0,4.0,0.0,0,0.35
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Zhou,zhou,Alfa Romeo,alfa,11,16.5,13,0.0,0,17.0,11.0,4.0,0.0,0,0.45
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Zhou,zhou,Alfa Romeo,alfa,17,25.5,9,2.0,0,16.333333333333332,11.0,4.0,0.0,0,0.15
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Zhou,zhou,Alfa Romeo,alfa,15,22.5,19,0.0,0,12.666666666666666,10.0,6.0,0.0,0,0.25
+2023,5,Miami Grand Prix,Miami International Autodrome,Zhou,zhou,Alfa Romeo,alfa,14,21.0,16,0.0,0,13.666666666666666,20.0,6.0,0.0,0,0.3

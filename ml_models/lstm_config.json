@@ -1,0 +1,26 @@
+{
+  "seq_length": 5,
+  "input_shape": [
+    5,
+    1
+  ],
+  "lap_time_column": "qualifying_time",
+  "model_metrics": {
+    "mse": 67.50608345779081,
+    "mae": 7.090761661529541,
+    "rmse": 8.216208581687225,
+    "r2": -0.007527467622152173,
+    "mae_percentage": 49.91426428405889
+  },
+  "training_info": {
+    "total_sequences": 82,
+    "valid_drivers": 17,
+    "train_samples": 65,
+    "test_samples": 17,
+    "epochs_trained": 41
+  },
+  "scaler_files": {
+    "scaler_X": "lstm_scaler_X.pkl",
+    "scaler_y": "lstm_scaler_y.pkl"
+  }
+}

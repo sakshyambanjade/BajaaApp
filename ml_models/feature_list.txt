@@ -1,0 +1,8 @@
+grid_position
+qualifying_time
+recent_avg_position
+avg_track_position
+team_season_points
+driver_dnf_rate
+home_advantage
+tire_strategy_score
