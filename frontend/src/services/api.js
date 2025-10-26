@@ -2,27 +2,44 @@ import axios from 'axios';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
-export const apiClient = axios.create({
+// Create axios instance
+const apiClient = axios.create({
   baseURL: API_BASE_URL,
+  timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
-  },
-  timeout: 10000,
+  }
 });
 
-// API endpoints
-const api = {
-  // Live data
-  getLiveData: () => apiClient.get('/live/'),
+// API methods
+export const f1Api = {
+  // Get current F1 standings
+  getLiveStandings: async (season = 2025) => {
+    const response = await apiClient.get('/standings/', {
+      params: { season }
+    });
+    return response.data;
+  },
   
-  // Predictions
-  predictRace: (config) => apiClient.post('/predict-race/', config),
+  // Get live session data
+  getLiveSession: async () => {
+    const response = await apiClient.get('/live-session/');
+    return response.data;
+  },
   
-  // Driver stats
-  getDriverStats: (driverId) => apiClient.get(`/driver/${driverId}/stats/`),
+  // ML Prediction endpoint
+  predictRace: async (data) => {
+    const response = await apiClient.post('/predict/', data);
+    return response;
+  },
   
-  // Pit strategy
-  optimizePit: (data) => apiClient.post('/optimize-pit/', data),
+  // Get driver telemetry
+  getDriverTelemetry: async (sessionKey, driverNumber) => {
+    const response = await apiClient.get('/telemetry/', {
+      params: { session_key: sessionKey, driver_number: driverNumber }
+    });
+    return response.data;
+  },
 };
 
-export default api;
+export default f1Api;  // Also export as default for flexibility

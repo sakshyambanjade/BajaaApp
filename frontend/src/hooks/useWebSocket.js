@@ -1,45 +1,76 @@
-import { useEffect, useState, useRef } from 'react';
-import { io } from 'socket.io-client';
+import { useState, useEffect, useRef } from 'react';
 
-const WS_URL = import.meta.env.VITE_WS_URL || 'ws://localhost:8000';
-
-export const useWebSocket = () => {
+export const useWebSocket = (url = 'ws://localhost:8000/ws/live-f1/') => {
   const [liveData, setLiveData] = useState(null);
   const [connected, setConnected] = useState(false);
-  const socketRef = useRef(null);
+  const ws = useRef(null);
+  const reconnectTimeout = useRef(null);
 
   useEffect(() => {
-    // Initialize socket connection
-    socketRef.current = io(WS_URL, {
-      transports: ['websocket'],
-      reconnection: true,
-      reconnectionAttempts: 5,
-      reconnectionDelay: 1000,
-    });
+    const connect = () => {
+      try {
+        ws.current = new WebSocket(url);
 
-    socketRef.current.on('connect', () => {
-      console.log('✅ WebSocket connected');
-      setConnected(true);
-    });
+        ws.current.onopen = () => {
+          console.log('✅ WebSocket Connected');
+          setConnected(true);
+        };
 
-    socketRef.current.on('race_update', (data) => {
-      console.log('📊 Race update received:', data);
-      setLiveData(data);
-    });
+        ws.current.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data);
+            setLiveData(data);
+          } catch (error) {
+            console.error('Failed to parse WebSocket message:', error);
+          }
+        };
 
-    socketRef.current.on('disconnect', () => {
-      console.log('❌ WebSocket disconnected');
-      setConnected(false);
-    });
+        ws.current.onerror = (error) => {
+          console.error('❌ WebSocket Error:', error);
+          setConnected(false);
+        };
 
-    socketRef.current.on('connect_error', (error) => {
-      console.error('WebSocket error:', error);
+        ws.current.onclose = () => {
+          console.log('🔌 WebSocket Disconnected');
+          setConnected(false);
+          
+          // Auto-reconnect after 3 seconds
+          reconnectTimeout.current = setTimeout(() => {
+            console.log('🔄 Attempting to reconnect...');
+            connect();
+          }, 3000);
+        };
+      } catch (error) {
+        console.error('Failed to create WebSocket:', error);
+        setConnected(false);
+      }
+    };
+
+    // For now, simulate connected state without actual WebSocket
+    // Remove this and uncomment connect() when backend is ready
+    setConnected(false);
+    setLiveData({
+      telemetry: {
+        speed: 320,
+        throttle: 100,
+        brake: 0,
+        gear: 8,
+        rpm: 12000
+      }
     });
+    
+    // Uncomment when backend WebSocket is ready:
+    // connect();
 
     return () => {
-      socketRef.current?.disconnect();
+      if (reconnectTimeout.current) {
+        clearTimeout(reconnectTimeout.current);
+      }
+      if (ws.current) {
+        ws.current.close();
+      }
     };
-  }, []);
+  }, [url]);
 
   return { liveData, connected };
 };

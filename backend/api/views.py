@@ -1,77 +1,64 @@
+"""
+API views for F1 data endpoints.
+
+Endpoints provided:
+- get_live_standings: Returns current F1 driver standings.
+- get_live_session_data: Returns data from the current/latest session.
+- get_historical_race_analysis: Returns detailed historical race analysis
+  for a given year and Grand Prix.
+"""
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
-import joblib
-import numpy as np
-from .models import Race, TelemetryData
-from ml_models.monte_carlo import MonteCarloRaceSimulator
-import pandas as pd
+from api.services.openf1_service import OpenF1Service
+from api.services.fastf1_service import FastF1Service
 
-# Load models
-xgboost_model = joblib.load('ml_models/xgboost_winner_model.pkl')
 
 @api_view(['GET'])
-def live_data(request):
-    """Get current live race data"""
-    # Fetch latest telemetry
-    latest_data = TelemetryData.objects.order_by('-timestamp')[:20]
-    
-    return Response({
-        'positions': [...],
-        'telemetry': [...],
-        'predictions': {...}
-    })
+def get_live_standings(request):
+    """Get current F1 driver standings."""
+    service = OpenF1Service()
+    season = int(request.query_params.get('season', 2025))
+    standings = service.get_driver_standings(season)
+    return Response(standings)
 
-@api_view(['POST'])
-def predict_race(request):
-    """Run race prediction with XGBoost + Monte Carlo"""
-    race_config = request.data
-    
-    # Prepare features
-    features = np.array([[
-        race_config['grid_position'],
-        race_config['qualifying_time'],
-        race_config['recent_avg_position'],
-        # ... more features
-    ]])
-    
-    # XGBoost prediction
-    win_prob = xgboost_model.predict_proba(features)[0][1]
-    
-    # Monte Carlo simulation
-    drivers_df = pd.DataFrame(race_config['drivers'])
-    simulator = MonteCarloRaceSimulator(drivers_df)
-    mc_results = simulator.run_simulation(n_simulations=5000)
-    
-    return Response({
-        'xgboost_win_probability': float(win_prob),
-        'monte_carlo_results': mc_results
-    })
 
-@api_view(['GET'])
-def driver_stats(request, driver_id):
-    """Get driver statistics and Alpha Score"""
-    # Calculate Driver Alpha Score
-    # (consistency + aggression + tire_efficiency)
-    
-    alpha_score = 0.75  # Placeholder
-    
-    return Response({
-        'driver_id': driver_id,
-        'alpha_score': alpha_score,
-        'consistency': 0.80,
-        'aggression': 0.70,
-        'tire_efficiency': 0.85
-    })
+def get_live_session_data(request):
+    """Get data from current/latest session."""
+    service = OpenF1Service()
+    session = service.get_current_session()
 
-@api_view(['POST'])
-def optimize_pit(request):
-    """Get RL-optimized pit stop recommendation"""
-    # Load RL agent and run inference
-    
-    recommended_lap = 28
-    
+    if session:
+        positions = service.get_live_positions(session['session_key'])
+        return Response({
+            'session': session,
+            'positions': positions
+        })
+    return Response(
+        {'message': 'No active session'},
+        status=404
+    )
+def get_historical_race_analysis(request, year, gp_name):
+    """Get detailed historical race analysis."""
+    service = FastF1Service()
+    session = service.get_session_data(year, gp_name, 'R')
+
+    if not session or not hasattr(session, 'results'):
+        return Response(
+            {'message': 'Session not found or invalid'},
+            status=404
+        )
+
+    # Extract relevant data
+    # results = session.results[
+    #     ['Abbreviation', 'Position', 'Points', 'TeamName']
+    # ]
+
     return Response({
-        'recommended_pit_lap': recommended_lap,
-        'confidence': 0.87
+    return Response({
+        'event': session.event.get('EventName', ''),
+        'session_info': {
+            'date': str(session.date),
+            'event': session.event['EventName'],
+            'type': session.name
+        }
     })
