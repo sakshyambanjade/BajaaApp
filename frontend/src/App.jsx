@@ -1,39 +1,20 @@
 import { useState, useEffect } from 'react';
 import { useWebSocket } from './hooks/useWebSocket';
-import LiveLeaderboard from './components/LiveLeaderboard';
+import LiveLeaderboard from './components/Dashboard/LiveLeaderboard';
 import WinProbability from './components/WinProbability';
 import TelemetryCharts from './components/TelemetryCharts';
 import StatsGrid from './components/StatsGrid';
-import api from './services/api';
 import { Zap, Radio } from 'lucide-react';
 import './App.css';
 
 function App() {
   const { liveData, connected } = useWebSocket();
-  const [predictions, setPredictions] = useState(null);
-  const [loading, setLoading] = useState(false);
-
+  const [predictions] = useState(null);
   useEffect(() => {
-    fetchPredictions();
+    // Only call prediction API if you want to test backend
+    // Comment this out until backend endpoints are ready
+    // fetchPredictions();
   }, []);
-
-  const fetchPredictions = async () => {
-    setLoading(true);
-    try {
-      const response = await api.predictRace({
-        drivers: [
-          { driver: 'Verstappen', grid_position: 1, recent_avg_position: 2.5 },
-          { driver: 'Hamilton', grid_position: 2, recent_avg_position: 3.0 },
-          { driver: 'Leclerc', grid_position: 3, recent_avg_position: 4.5 },
-        ]
-      });
-      setPredictions(response.data);
-    } catch (error) {
-      console.error('Error fetching predictions:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-f1-darker relative overflow-hidden">
@@ -65,7 +46,7 @@ function App() {
               <div className="text-right">
                 <div className="flex items-center gap-2 text-f1-gray-300">
                   <Zap className="w-4 h-4 text-f1-teal-400" />
-                  <span className="font-semibold text-white text-lg">2023 Monaco GP</span>
+                  <span className="font-semibold text-white text-lg">2025 Monaco GP</span>
                 </div>
                 <p className="text-sm text-f1-gray-400 font-mono">Lap 47 / 78</p>
               </div>
@@ -73,15 +54,15 @@ function App() {
               <div className={`flex items-center gap-3 px-5 py-3 rounded-xl ${
                 connected 
                   ? 'bg-gradient-to-r from-green-500/20 to-green-600/20 border border-green-500/30' 
-                  : 'bg-gradient-to-r from-red-500/20 to-red-600/20 border border-red-500/30'
+                  : 'bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 border border-yellow-500/30'
               }`}>
-                <Radio className={`w-5 h-5 ${connected ? 'text-green-400' : 'text-red-400'}`} />
+                <Radio className={`w-5 h-5 ${connected ? 'text-green-400' : 'text-yellow-400'}`} />
                 <div>
-                  <div className={`text-sm font-bold ${connected ? 'text-green-400' : 'text-red-400'}`}>
-                    {connected ? 'LIVE' : 'OFFLINE'}
+                  <div className={`text-sm font-bold ${connected ? 'text-green-400' : 'text-yellow-400'}`}>
+                    {connected ? 'LIVE' : 'DEMO MODE'}
                   </div>
                   <div className="text-xs text-f1-gray-400 font-mono">
-                    {connected ? 'Real-time data' : 'Reconnecting...'}
+                    {connected ? 'Real-time data' : 'Simulated data'}
                   </div>
                 </div>
               </div>
@@ -147,7 +128,7 @@ function App() {
             PITLANE AI © 2025 | Real-time F1 Analytics Platform
           </p>
           <p className="text-f1-gray-500 text-xs mt-2 font-mono">
-            Data from FastF1 & Jolpica F1 API • Predictions via ML Models
+            Data from OpenF1 API & FastF1 • Predictions via ML Models
           </p>
         </div>
       </footer>

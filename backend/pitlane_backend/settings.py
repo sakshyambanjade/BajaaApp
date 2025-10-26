@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,15 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # Third-party apps
     'rest_framework',
     'corsheaders',
-    'channels',
+    # 'channels',  # Uncomment when you need WebSockets
+    
+    # Your apps
     'api',
     'ml_models',
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Must be at the top
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,13 +60,19 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS settings
+# CORS settings - Allow React frontend to communicate with Django backend
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Vite dev server
+    "http://localhost:5174",  # Vite alternate port
     "http://127.0.0.1:5173",
+    "http://localhost:3000",  # Create React App (if you use it)
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+# For development only - uncomment to allow all origins (less secure)
+# CORS_ALLOW_ALL_ORIGINS = True
+
 
 ROOT_URLCONF = "pitlane_backend.urls"
 
@@ -83,18 +94,22 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "pitlane_backend.wsgi.application"
 
-# Channels configuration for WebSockets
-ASGI_APPLICATION = 'pitlane_backend.asgi.application'
-
-CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            'hosts': [('127.0.0.1', 6379)],  # Local development
-            # For Docker: 'hosts': [('redis', 6379)],
-        },
-    },
-}
+# ========================================
+# CHANNELS & WEBSOCKETS (Optional - For Real-Time Features)
+# ========================================
+# Uncomment these when you're ready to add real-time race updates
+# ASGI_APPLICATION = 'pitlane_backend.asgi.application'
+# 
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'channels.layers.InMemoryChannelLayer',  # For development
+#         # For production with Redis:
+#         # 'BACKEND': 'channels_redis.core.RedisChannelLayer',
+#         # 'CONFIG': {
+#         #     'hosts': [('127.0.0.1', 6379)],
+#         # },
+#     },
+# }
 
 
 # Database
@@ -114,20 +129,23 @@ DATABASES = {
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'pitlane_db',
 #         'USER': 'pitlane_user',
-#         'PASSWORD': 'your_password',
-#         'HOST': 'localhost',  # For Docker: 'db'
+#         'PASSWORD': os.environ.get('DB_PASSWORD', 'your_password'),
+#         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
 
 
-# Celery configuration
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'  # For Docker: 'redis://redis:6379/0'
-CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/0'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'UTC'
+# ========================================
+# CELERY CONFIGURATION (Optional - For Background Tasks)
+# ========================================
+# Uncomment these when you need background task processing
+# CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+# CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/0'
+# CELERY_ACCEPT_CONTENT = ['json']
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_TIMEZONE = 'UTC'
 
 
 # Password validation
@@ -167,6 +185,10 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Media files (User uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -174,12 +196,76 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-# REST Framework settings
+# ========================================
+# REST FRAMEWORK SETTINGS
+# ========================================
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.AllowAny',  # Open for development
     ],
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',  # Nice API browser
     ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 20,
+    # Throttling to prevent API abuse
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '100/hour',  # Anonymous users
+        'user': '1000/hour'  # Authenticated users
+    }
+}
+
+
+# ========================================
+# CACHING (Optional but recommended)
+# ========================================
+# Cache F1 data to reduce API calls
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+        'TIMEOUT': 300,  # 5 minutes cache
+    }
+}
+
+
+# ========================================
+# LOGGING (Helpful for debugging)
+# ========================================
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'api': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
 }
